@@ -1,6 +1,6 @@
 **Replication Package for Paper Under Review**
 
-This repository provides the replication package for our paper on assertion generation, focusing on the use case of natural language processing (NLP) for generating test prompts.
+This repository provides the replication package for our paper on compressing prompts of RAG-based coding task.
 
 **Dataset Links:**
 
