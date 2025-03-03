@@ -34,13 +34,13 @@ def unified_inference(prompt_path, result_path, model_name="gpt-3.5-turbo"):
                     'idx': pos
                 }
                 data.append(result)
-                break  # 成功获取响应后退出重试循环
+                break  
             except Exception as e:
                 attempts += 1
                 print(f"Attempt {attempts} failed with error: {e}")
                 if attempts == max_retries:
                     print("Max retries reached. Moving to the next item.")
-                    break  # 继续下一个请求
+                    break  
     
     with jsonlines.open(result_path, mode='w') as f:
         f.write_all(data)1
