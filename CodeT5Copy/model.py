@@ -25,7 +25,7 @@ class CopyMechModule(nn.Module):
             nn.Linear(transformer_hidden_size * 2, 1),
             nn.Sigmoid(),
         )
-        self.vocab_size = vocab_size
+        self.vocab_size = 32107 #vocab_size
     
     def forward(
         self,
