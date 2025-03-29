@@ -6,8 +6,10 @@ This repository provides the replication package for our paper on compressing pr
 
 * Assertion Generation: [https://sites.google.com/view/atlas-nmt/home](https://sites.google.com/view/atlas-nmt/home)
 * BugsFix: [https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-refinement/data/medium]
-* Code Suggestion:: [https://github.com/iCSawyer/CodeSuggestion?tab=readme-ov-file] lucene_java_header_code_tokens
+* Code Suggestion: [https://github.com/iCSawyer/CodeSuggestion?tab=readme-ov-file] lucene_java_header_code_tokens
 
+**Compression Training Set Links:**
+* Google Drive: [https://drive.google.com/file/d/1BkyYavoqKHDqFLuwhyLnewfEBYUaxXnR/view?usp=share_link]
 **Framework:**
 ```
 CodePromptZip
