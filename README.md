@@ -9,7 +9,7 @@ This repository provides the replication package for our paper on compressing pr
 * Code Suggestion: [https://github.com/iCSawyer/CodeSuggestion?tab=readme-ov-file] lucene_java_header_code_tokens
 
 **Compression Training Set Links:**
-* Google Drive: [https://drive.google.com/file/d/1BkyYavoqKHDqFLuwhyLnewfEBYUaxXnR/view?usp=share_link]
+* Google Drive: [https://drive.google.com/file/d/1tGMP0nbMe1BgKxGi1M0Qj2_HgflFPCUB/view?usp=share_link]
   
 **Framework:**
 ```
