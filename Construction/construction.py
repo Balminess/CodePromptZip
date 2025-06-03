@@ -31,26 +31,29 @@ def extract_code(code, index=0):
     return None
 
 def compress(org_code):
-    """
-    Compress code using the T5 model.
-    """
-
+    '''
     input_ids = tokenizer(org_code, return_tensors="pt").input_ids.to(device)
-    decoder_input_ids = torch.tensor([[tokenizer.pad_token_id]], device=device)
 
+    decoder_input_ids = torch.tensor([[tokenizer.pad_token_id]], device=device)
+    eos_token_id = tokenizer.eos_token_id 
     output_ids = decoder_input_ids.clone() 
 
-    for _ in range(max_length):
+    for _ in range(256):
         outputs = model(input_ids=input_ids, decoder_input_ids=output_ids)
         logits = outputs.logits
-        next_token_logits = logits[:, -1, :]  
-        next_token_id = torch.argmax(next_token_logits, dim=-1).unsqueeze(-1)  
-        output_ids = torch.cat([output_ids, next_token_id], dim=-1) 
-
+    
+    
+        next_token_logits = logits[:, -1, :]
+        
+    
+        next_token_id = torch.argmax(next_token_logits, dim=-1).unsqueeze(-1)
+    
+        output_ids = torch.cat([output_ids, next_token_id], dim=-1)
+    
         if next_token_id.item() == eos_token_id:
             break
-
-    return tokenizer.decode(output_ids[0], skip_special_tokens=True)
+    compressed_code=tokenizer.decode(output_ids[0], skip_special_tokens=True)
+    return compressed_code
 
 def prompt_construction(shot_number, compress_flag, ratio):
     """
