@@ -46,4 +46,4 @@ def unified_inference(prompt_path, result_path, model_name="gpt-3.5-turbo"):
         f.write_all(data)1
 
 if __name__ == '__main__':
-    unified_inference("input.jsonl", "output.jsonl", model_name="gpt-3.5-turbo")
+    unified_inference("input.jsonl", "output.jsonl", model_name="gpt-4o-mini")
