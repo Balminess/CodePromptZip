@@ -64,10 +64,10 @@ def sbert_preprocess(kdbase,zip_question_1,zip_question_2,test,path,numbers,rati
 
 if __name__ == "__main__": 
     ratio=0.5
-    output_path='/home/pengfei/code/slimcode/preprocess'
-    train_path='/home/pengfei/code/slimcode/dataset/assertion/category/atlas_codezip_0.jsonl'
-    compressed_kd_base=f'/home/pengfei/code/slimcode/dataset/assertion/category/atlas_codezip_{ratio}.jsonl'
-    test_path='/home/pengfei/code/slimcode/dataset/assertion/base/atlas-test-m.jsonl'
+    output_path='/preprocess'
+    train_path='atlas_codezip_0.jsonl'
+    compressed_kd_base=f'atlas_codezip_{ratio}.jsonl'
+    test_path='atlas-test-m.jsonl'
     
     kdbase= []
 
