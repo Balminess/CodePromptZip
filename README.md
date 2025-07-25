@@ -10,7 +10,8 @@ This repository provides the replication package for our paper on compressing pr
 
 **Compression Training Set Links:**
 * Google Drive: [https://drive.google.com/file/d/1tGMP0nbMe1BgKxGi1M0Qj2_HgflFPCUB/view?usp=share_link]
-  
+**Hugginggce Link:**
+* zip: [https://huggingface.co/Balminess/zipt5]
 **Framework:**
 ```
 CodePromptZip
