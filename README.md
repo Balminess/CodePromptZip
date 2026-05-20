@@ -2,6 +2,9 @@
 
 This repository provides the replication package for our paper on compressing prompts of RAG-based coding task.
 
+The full paper (ACL 2026) is available on arXiv:                                                                                                                                            
+[https://arxiv.org/abs/2502.14925](https://arxiv.org/abs/2502.14925)
+
 **Dataset Links:**
 
 * Assertion Generation: [https://sites.google.com/view/atlas-nmt/home](https://sites.google.com/view/atlas-nmt/home)
